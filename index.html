@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>دليل زائري كربلاء</title>
+
+<style>
+
+body{
+
+margin:0;
+
+background:#f4f4f4;
+
+font-family:Tahoma,Arial,sans-serif;
+
+}
+
+header{
+
+background:#0f5132;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
+
+header h1{
+
+margin:0;
+
+font-size:30px;
+
+}
+
+header p{
+
+margin:8px 0;
+
+font-size:18px;
+
+}
+
+.container{
+
+width:95%;
+
+max-width:900px;
+
+margin:auto;
+
+padding:20px;
+
+}
+
+#search{
+
+width:100%;
+
+padding:14px;
+
+font-size:18px;
+
+border-radius:10px;
+
+border:1px solid #ccc;
+
+margin-bottom:20px;
+
+}
+
+.card{
+
+background:white;
+
+padding:18px;
+
+margin-bottom:15px;
+
+border-radius:12px;
+
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+
+}
+
+.card h3{
+
+margin:0;
+
+color:#0f5132;
+
+}
+
+.card p{
+
+color:#666;
+
+margin:10px 0;
+
+}
+
+.btn{
+
+display:inline-block;
+
+background:#0f5132;
+
+color:white;
+
+text-decoration:none;
+
+padding:10px 18px;
+
+border-radius:8px;
+
+}
+
+.btn:hover{
+
+background:#198754;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>العتبة العباسية المقدسة</h1>
+
+<p>قسم بين الحرمين الشريفين</p>
+
+<p>شعبة العوارض</p>
+
+</header>
+
+<div class="container">
+
+<input
+id="search"
+type="text"
+placeholder="🔍 ابحث عن موقع..."
+onkeyup="searchSite()">
+
+<div class="card">
+
+<h3>مرقد الإمام الحسين (ع)</h3>
+
+<p>حرم امام حسین (ع)</p>
+
+<a class="btn"
+target="_blank"
+href="https://maps.app.goo.gl/3x53Kfezit4T1Wuu8?g_st=ic">
+
+📍 فتح الموقع
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>مرقد أبي الفضل العباس (ع)</h3>
+
+<p>حرم حضرت عباس (ع)</p>
+
+<a class="btn"
+target="_blank"
+href="https://maps.app.goo.gl/wG3AgZegHrW1A6Kr7?g_st=ic">
+
+📍 فتح الموقع
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>التل الزينبي</h3>
+
+<p>تل زینبیه</p>
+
+<a class="btn"
+target="_blank"
+href="https://maps.app.goo.gl/umETTEAmQ6xA33Dt7?g_st=ic">
+
+📍 فتح الموقع
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>مقام الإمام المهدي (عج)</h3>
+
+<p>مقام حضرت مهدی (عج)</p>
+
+<a class="btn"
+target="_blank"
+href="https://maps.app.goo.gl/heoGhhzV93oH1omc7?g_st=ic">
+
+📍 فتح الموقع
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>مقام الإمام جعفر الصادق (ع)</h3>
+
+<p>مقام امام جعفر صادق (ع)</p>
+
+<a class="btn"
+target="_blank"
+href="https://maps.app.goo.gl/hWGGuuVwe4bWRrnj9?g_st=ipc">
+
+📍 فتح الموقع
+
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+function searchSite(){
+
+let input=document.getElementById("search").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(input)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>
